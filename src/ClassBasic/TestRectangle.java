@@ -1,0 +1,55 @@
+package modling1;
+
+import java.util.Scanner;
+import modling1.Rectangle;
+
+public class TestRectangle {
+
+	public static void main(String[] args) {
+	Scanner keyboard = new Scanner(System.in);
+	
+	Rectangle rec1 = new Rectangle();
+	System.out.println("첫번째 직사각형의 색깔");
+	rec1.setColor(keyboard.next());
+	
+	System.out.println("첫번째 직사각형의 가로");
+	rec1.setWidth(keyboard.nextInt());
+	
+	System.out.println("첫번째 직사각형의 세로");
+	rec1.setLegth(keyboard.nextInt());
+	
+	Rectangle rec2 = new Rectangle();
+	System.out.println("두번째 직사각형의 색깔");
+	rec2.setColor(keyboard.next());
+	
+	System.out.println("두번째 직사각형의 가로");
+	rec2.setWidth(keyboard.nextInt());
+	
+	System.out.println("두번째 직사각형의 세로");
+	rec2.setLegth(keyboard.nextInt());
+	
+    System.out.println(rec1.getColor()+ "직사각형의 넓이는" + rec1.area() + "이고 둘레는"+
+                       rec1.perimiter()+"입니다.");
+    
+    System.out.println(rec2.getColor()+ "직사각형의 넓이는" + rec2.area() + "이고 둘레는"+
+            rec2.perimiter()+"입니다.");
+    
+    if(rec1.area()>rec2.area()) {
+    	System.out.println("넓이는 " + rec1.getColor() + "직사각형이 더 큽니다.");
+    }else if(rec1.area()<rec2.area()) {
+    	System.out.println("넓이는 " + rec1.getColor() + "직사각형이 더 큽니다.");
+    }else {
+    	System.out.println("두 사각형의 넓이는 같습니다.");
+    }
+    if(rec1.perimiter()>rec2.perimiter()) {
+    	System.out.println("둘레는 " + rec1.getColor() + "직사각형이 더 큽니다.");
+    }else if(rec1.perimiter()<rec2.perimiter()) {
+    	System.out.println("둘레는 " + rec1.getColor() + "직사각형이 더 큽니다.");
+    }else {
+    	System.out.println("두 사각형의 둘레는 같습니다.");
+    }
+    
+
+	}
+
+}
