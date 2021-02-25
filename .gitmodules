@@ -1,0 +1,3 @@
+[submodule "src/srcmodeling3"]
+	path = src/srcmodeling3
+	url = https://github.com/ggabdoll/BaseProject.git
